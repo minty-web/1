@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kōji &amp; Crumb — Slow-fermented bakery &amp; café, Port Elling</title>
+  <meta name="description" content="A small-batch fermentation bakery on Harbour Street: 48-hour sourdough, miso-caramel buns, house ferments and weekend workshops.">
+  <meta name="theme-color" content="#f4ede1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kōji &amp; Crumb — Bread that takes its time">
+  <meta property="og:description" content="Sourdough, miso and koji from a small harbour bakery. A concept site.">
+  <meta property="og:image" content="https://minty-web.github.io/1/preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&amp;family=Inter:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Kōji &amp; Crumb, back to top">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle cx="20" cy="20" r="19" fill="#c24a17"/>
+          <path d="M9 24c0-6 5-10 11-10s11 4 11 10c0 2-1.5 3-3.5 3h-15C10.5 27 9 26 9 24Z" fill="#f4ede1"/>
+          <path d="M14 19.5c3-2.4 7.5-3 11.5-1.6" stroke="#c24a17" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span class="brand-name">Kōji <em>&amp;</em> Crumb</span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#menu">Today’s bake</a></li>
+          <li><a href="#process">The slow way</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+
+      <p class="status-pill" data-status-pill>
+        <span class="status-dot" aria-hidden="true"></span>
+        <span data-status-short>Today’s hours</span>
+      </p>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Sourdough · Miso · Koji — 14 Harbour Street</p>
+          <h1 class="hero-title">Bread that takes its <em>time.</em></h1>
+          <p class="hero-lede">
+            Every loaf, bun and jar on our counter has fermented for at least
+            48&nbsp;hours. Come early: the miso-caramel buns are usually gone by ten.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">See today’s bake</a>
+            <a class="btn btn-ghost" href="#workshops">Book a workshop</a>
+          </div>
+          <dl class="hero-facts">
+            <div><dt>Ferment</dt><dd>48 h minimum</dd></div>
+            <div><dt>Flour</dt><dd>Milled within 80 km</dd></div>
+            <div><dt>Oven on</dt><dd>4:30 every morning</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg class="loaf" viewBox="0 0 520 460">
+            <!-- steam -->
+            <g class="steam" fill="none" stroke="#2b1d14" stroke-width="3" stroke-linecap="round">
+              <path d="M214 176c-20-26 18-44-2-72s16-44 0-70"/>
+              <path d="M262 168c-20-26 18-44-2-72s16-44 0-70"/>
+              <path d="M310 176c-20-26 18-44-2-72s16-44 0-70"/>
+            </g>
+
+            <!-- wheat stalk -->
+            <g class="wheat">
+              <path d="M58 352c6-70 14-150 44-226" fill="none" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/>
+              <g fill="#e2a447" stroke="#2b1d14" stroke-width="2.4">
+                <ellipse cx="104" cy="122" rx="8" ry="17" transform="rotate(22 104 122)"/>
+                <ellipse cx="88" cy="146" rx="8" ry="17" transform="rotate(-28 88 146)"/>
+                <ellipse cx="110" cy="152" rx="8" ry="17" transform="rotate(38 110 152)"/>
+                <ellipse cx="82" cy="176" rx="8" ry="17" transform="rotate(-30 82 176)"/>
+                <ellipse cx="104" cy="182" rx="8" ry="17" transform="rotate(40 104 182)"/>
+                <ellipse cx="78" cy="206" rx="8" ry="17" transform="rotate(-32 78 206)"/>
+              </g>
+            </g>
+
+            <!-- board -->
+            <path d="M96 352h300a18 18 0 0 1 18 18v6a18 18 0 0 1-18 18H96a18 18 0 0 1-18-18v-6a18 18 0 0 1 18-18Z" fill="#c9965f"/>
+            <rect x="410" y="362" width="62" height="20" rx="10" fill="#c9965f"/>
+            <path d="M90 346h300a18 18 0 0 1 18 18v6a18 18 0 0 1-18 18H90a18 18 0 0 1-18-18v-6a18 18 0 0 1 18-18Zm312 10h58a10 10 0 0 1 0 20h-58" fill="none" stroke="#2b1d14" stroke-width="3" stroke-linejoin="round"/>
+
+            <!-- loaf: offset fill under an ink outline gives a printed, slightly misregistered feel -->
+            <path d="M112 346c-14-74 52-152 160-156 112-4 172 66 160 134-3 14-12 22-28 22H136c-14 0-22-1-24 0Z" fill="#c8722f"/>
+            <path d="M148 330c-8-50 40-104 120-108 80-3 128 42 124 94" fill="none" stroke="#e39b56" stroke-width="16" stroke-linecap="round" opacity=".55"/>
+            <path d="M104 338c-14-74 52-152 160-156 112-4 172 66 160 134-3 14-12 22-28 22H128c-14 0-22-1-24 0Z" fill="none" stroke="#2b1d14" stroke-width="3" stroke-linejoin="round"/>
+            <!-- the "ear" where the score opened in the oven -->
+            <path d="M156 270c48-42 132-56 210-30" fill="none" stroke="#f3cd95" stroke-width="12" stroke-linecap="round"/>
+            <path d="M152 278c50-40 134-52 214-26" fill="none" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/>
+            <!-- flour dust -->
+            <g fill="#fff8ec" opacity=".85">
+              <circle cx="214" cy="226" r="3"/><circle cx="242" cy="214" r="2"/><circle cx="276" cy="210" r="3.4"/>
+              <circle cx="318" cy="218" r="2.2"/><circle cx="196" cy="246" r="2"/><circle cx="350" cy="232" r="2.6"/>
+              <circle cx="300" cy="226" r="1.8"/><circle cx="258" cy="232" r="1.6"/>
+            </g>
+            <!-- crumbs -->
+            <g fill="#c8722f" stroke="#2b1d14" stroke-width="2">
+              <circle cx="446" cy="336" r="5"/><circle cx="466" cy="344" r="3.4"/><circle cx="58" cy="380" r="4"/>
+            </g>
+          </svg>
+
+          <svg class="hours-badge" viewBox="0 0 200 200">
+            <defs>
+              <path id="badge-ring" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0"/>
+            </defs>
+            <circle cx="100" cy="100" r="96" fill="#2b1d14"/>
+            <text class="badge-text">
+              <textPath href="#badge-ring">FRESH FROM 7:30 · TUESDAY TO SUNDAY · BAKED ON SITE ·</textPath>
+            </text>
+            <text class="badge-center" x="100" y="96" text-anchor="middle">est.</text>
+            <text class="badge-center badge-year" x="100" y="126" text-anchor="middle">2019</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">On the counter</p>
+          <h2 id="menu-title">Today’s bake</h2>
+          <p class="section-lede">
+            Everything here was mixed two days ago and baked this morning. Tap a
+            category; prices include a paper bag.
+          </p>
+        </header>
+
+        <div class="tabs" data-tabs data-reveal>
+          <div class="tablist" role="tablist" aria-label="Menu categories">
+            <button class="tab" type="button" role="tab" id="tab-breads" aria-controls="panel-breads" aria-selected="true">Breads</button>
+            <button class="tab" type="button" role="tab" id="tab-pastries" aria-controls="panel-pastries" aria-selected="false" tabindex="-1">Pastries</button>
+            <button class="tab" type="button" role="tab" id="tab-ferments" aria-controls="panel-ferments" aria-selected="false" tabindex="-1">Ferments</button>
+            <button class="tab" type="button" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" tabindex="-1">Drinks</button>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-breads" aria-labelledby="tab-breads" tabindex="0">
+            <h3 class="panel-title">Breads</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Harbour Sourdough</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£6.20</span></p>
+                <p class="menu-note">Our house loaf. 72-hour cold ferment, a dark crackling crust and a custardy open crumb.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Miso Rye</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£6.80</span></p>
+                <p class="menu-note">40% wholegrain rye, white miso and caraway. Dense in the best way; slice it thin.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Seeded Porridge Loaf</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£6.50</span></p>
+                <p class="menu-note">Toasted oats, sunflower, flax and pumpkin seeds soaked overnight and folded through.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Koji Milk Bread</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£5.40</span></p>
+                <p class="menu-note">A pillowy tin loaf sweetened with rice koji instead of sugar. Toast it, then butter it generously.</p>
+                <p class="menu-tags"><span class="tag">Contains milk</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Sea Salt Focaccia</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.90</span></p>
+                <p class="menu-note">Olive oil, rosemary from the back yard and flakes from the harbour salt works.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span><span class="tag tag-hot">Warm until 11</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-pastries" aria-labelledby="tab-pastries" tabindex="0">
+            <h3 class="panel-title">Pastries</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Miso-Caramel Bun</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.60</span></p>
+                <p class="menu-note">Laminated dough rolled with white-miso caramel and toasted sesame. The reason for the queue.</p>
+                <p class="menu-tags"><span class="tag tag-hot">Usually gone by 10</span><span class="tag">Contains milk</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Cardamom Knot</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.40</span></p>
+                <p class="menu-note">Brown butter, freshly cracked cardamom and a crunch of pearl sugar.</p>
+                <p class="menu-tags"><span class="tag">Contains milk</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Rhubarb &amp; Koji Custard Danish</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£4.10</span></p>
+                <p class="menu-note">Pink rhubarb from the valley over a custard sweetened with koji. Seasonal, so not for long.</p>
+                <p class="menu-tags"><span class="tag">Contains egg</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Shio Pan</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£2.80</span></p>
+                <p class="menu-note">Salted butter rolls, crisp and caramelised underneath, soft on top.</p>
+                <p class="menu-tags"><span class="tag">Contains milk</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Black Sesame Morning Bun</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.70</span></p>
+                <p class="menu-note">Orange zest, black sesame sugar and a little sea salt to wake you up.</p>
+                <p class="menu-tags"><span class="tag">Contains sesame</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-ferments" aria-labelledby="tab-ferments" tabindex="0">
+            <h3 class="panel-title">Ferments</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">House White Miso, 250 g</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£7.50</span></p>
+                <p class="menu-note">Aged six months in cedar with yellow split peas from a farm up the coast.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Fermented Chilli Honey</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£6.00</span></p>
+                <p class="menu-note">Scotch bonnets and wildflower honey, three weeks in the crock. Excellent on pizza, dangerous on toast.</p>
+                <p class="menu-tags"><span class="tag tag-hot">Hot</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Cultured Butter, 200 g</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£5.20</span></p>
+                <p class="menu-note">Churned on Thursdays from cream we culture for 36 hours. Tangy, golden, lightly salted.</p>
+                <p class="menu-tags"><span class="tag">Contains milk</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Kimchi of the Week</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£5.80</span></p>
+                <p class="menu-note">This week: crisp cabbage, nashi pear and gochugaru. Ask for a taste.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">A Spoon of Gloria</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£4.00</span></p>
+                <p class="menu-note">Our seven-year-old sourdough starter, in a jar, with handwritten feeding instructions.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" tabindex="0">
+            <h3 class="panel-title">Drinks</h3>
+            <ul class="menu-list">
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Filter Coffee</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£2.80</span></p>
+                <p class="menu-note">A rotating single origin from the roaster two streets away. Free refill before 9.</p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Hojicha Latte</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.60</span></p>
+                <p class="menu-note">Roasted green tea, nutty and low in caffeine, with oat or whole milk.</p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Koji Lemonade</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.20</span></p>
+                <p class="menu-note">Lightly sparkling rice-koji ferment with lemon and a pinch of salt.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Ginger Kombucha</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.40</span></p>
+                <p class="menu-note">Brewed in house, dry and properly spicy.</p>
+                <p class="menu-tags"><span class="tag">Vegan</span></p>
+              </li>
+              <li class="menu-item">
+                <p class="menu-row"><span class="menu-name">Miso Hot Chocolate</span><span class="menu-leader" aria-hidden="true"></span><span class="menu-price">£3.80</span></p>
+                <p class="menu-note">70% dark chocolate, cream and a whisper of white miso. Trust us.</p>
+                <p class="menu-tags"><span class="tag">Contains milk</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">How we bake</p>
+          <h2 id="process-title">The slow way</h2>
+          <p class="section-lede">
+            Three steps, three days. We don’t add speed. We add time, the cheapest
+            ingredient we have and the only one you can taste.
+          </p>
+        </header>
+
+        <ol class="timeline" data-timeline>
+          <li class="step" data-reveal>
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 96 96">
+                <circle cx="48" cy="48" r="46" fill="#ece2d1"/>
+                <path d="M20 46h56c0 17-12.5 28-28 28S20 63 20 46Z" fill="#f4ede1" stroke="#2b1d14" stroke-width="3" stroke-linejoin="round"/>
+                <path d="M26 46c4-7 14-11 22-11s18 4 22 11" fill="#e8d7b8" stroke="#2b1d14" stroke-width="3"/>
+                <path d="M58 18 46 44" stroke="#2b1d14" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="44" cy="44" r="3" fill="#2b1d14"/>
+              </svg>
+            </div>
+            <p class="step-when">Day 1 · 3 pm</p>
+            <h3 class="step-title">Mix</h3>
+            <p class="step-text">Flour, water, salt and a scoop of Gloria, our starter. Nothing else. Small batches, mixed by hand.</p>
+          </li>
+          <li class="step" data-reveal style="--delay: 120ms">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 96 96">
+                <circle cx="48" cy="48" r="46" fill="#ece2d1"/>
+                <circle cx="48" cy="50" r="26" fill="#f4ede1" stroke="#2b1d14" stroke-width="3"/>
+                <path d="M48 34v16l10 7" fill="none" stroke="#c24a17" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M40 18h16M48 18v6" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="step-when">Day 1 to 3</p>
+            <h3 class="step-title">Wait 48 hours</h3>
+            <p class="step-text">Two days in the cold room. Wild yeast makes it rise; lactic bacteria and koji enzymes make it taste like something.</p>
+          </li>
+          <li class="step" data-reveal style="--delay: 240ms">
+            <div class="step-icon" aria-hidden="true">
+              <svg viewBox="0 0 96 96">
+                <circle cx="48" cy="48" r="46" fill="#ece2d1"/>
+                <rect x="20" y="28" width="56" height="42" rx="6" fill="#f4ede1" stroke="#2b1d14" stroke-width="3"/>
+                <rect x="28" y="40" width="40" height="22" rx="3" fill="#2b1d14"/>
+                <path d="M34 58c0-6 6-10 14-10s14 4 14 10" fill="#c8722f"/>
+                <path d="M30 34h6M40 34h6" stroke="#2b1d14" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <p class="step-when">Day 3 · 4:30 am</p>
+            <h3 class="step-title">Bake</h3>
+            <p class="step-text">Into the stone-deck oven with a burst of steam. Out comes a crust that keeps crackling for twenty minutes.</p>
+          </li>
+        </ol>
+
+        <figure class="pull-quote" data-reveal>
+          <blockquote>
+            <p>“People ask for our secret ingredient. It’s Tuesday. The bread you buy on Thursday started on Tuesday.”</p>
+          </blockquote>
+          <figcaption>Hana Lindqvist, head baker</figcaption>
+        </figure>
+
+        <ul class="stats" data-reveal>
+          <li><span class="stat-num" data-count="48">48</span><span class="stat-unit">h</span><span class="stat-label">minimum ferment</span></li>
+          <li><span class="stat-num" data-count="0">0</span><span class="stat-label">grams of commercial yeast</span></li>
+          <li><span class="stat-num" data-count="80">80</span><span class="stat-unit">km</span><span class="stat-label">furthest our flour travels</span></li>
+          <li><span class="stat-num" data-count="7">7</span><span class="stat-unit">yrs</span><span class="stat-label">age of Gloria, our starter</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Workshops -->
+    <section class="section workshops" id="workshops" aria-labelledby="workshops-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Learn with us</p>
+          <h2 id="workshops-title">Weekend workshops</h2>
+          <p class="section-lede">
+            Small groups of eight around the big table. Aprons, flour and lunch are
+            on us; you go home with everything you made.
+          </p>
+        </header>
+
+        <div class="workshop-layout">
+          <ul class="workshop-list">
+            <li class="workshop" data-workshop="sourdough" data-seats="4" data-reveal>
+              <p class="workshop-when"><span>Sat</span> 10:00 to 13:00</p>
+              <h3 class="workshop-title">Sourdough from scratch</h3>
+              <p class="workshop-text">Feed a starter, shape two loaves and take one of Gloria’s grandchildren home.</p>
+              <div class="workshop-meta">
+                <span class="workshop-price">£65</span>
+                <span class="workshop-seats" data-seats-label>4 seats left</span>
+                <button class="btn btn-small" type="button" data-book="sourdough">Book a seat</button>
+              </div>
+            </li>
+            <li class="workshop" data-workshop="miso" data-seats="6" data-reveal style="--delay: 80ms">
+              <p class="workshop-when"><span>Sun</span> 11:00 to 13:30</p>
+              <h3 class="workshop-title">Koji &amp; miso basics</h3>
+              <p class="workshop-text">Grow koji on rice, start your own jar of miso and taste six of ours at different ages.</p>
+              <div class="workshop-meta">
+                <span class="workshop-price">£55</span>
+                <span class="workshop-seats" data-seats-label>6 seats left</span>
+                <button class="btn btn-small" type="button" data-book="miso">Book a seat</button>
+              </div>
+            </li>
+            <li class="workshop" data-workshop="pastry" data-seats="2" data-reveal style="--delay: 160ms">
+              <p class="workshop-when"><span>Thu</span> 18:00 to 21:00</p>
+              <h3 class="workshop-title">Laminated pastry night</h3>
+              <p class="workshop-text">Butter blocks, folds and patience. You’ll leave with a tray of your own miso-caramel buns.</p>
+              <div class="workshop-meta">
+                <span class="workshop-price">£75</span>
+                <span class="workshop-seats" data-seats-label>2 seats left</span>
+                <button class="btn btn-small" type="button" data-book="pastry">Book a seat</button>
+              </div>
+            </li>
+            <li class="workshop" data-workshop="kids" data-seats="8" data-reveal style="--delay: 240ms">
+              <p class="workshop-when"><span>Sat</span> 14:00 to 15:30</p>
+              <h3 class="workshop-title">Kids’ bread club <small>(ages 7–12)</small></h3>
+              <p class="workshop-text">Pretzels, flour fights (small ones) and the science of bubbles. Grown-ups get a coffee.</p>
+              <div class="workshop-meta">
+                <span class="workshop-price">£20</span>
+                <span class="workshop-seats" data-seats-label>8 seats left</span>
+                <button class="btn btn-small" type="button" data-book="kids">Book a seat</button>
+              </div>
+            </li>
+          </ul>
+
+          <form class="booking" id="booking" novalidate data-reveal>
+            <h3 class="booking-title">Hold a seat</h3>
+            <p class="booking-sub">Pay on the day. Free cancellation up to 48 hours before (it seemed fitting).</p>
+
+            <div class="field">
+              <label for="b-name">Your name</label>
+              <input id="b-name" name="name" type="text" autocomplete="name" required aria-describedby="b-name-error">
+              <p class="field-error" id="b-name-error"></p>
+            </div>
+            <div class="field">
+              <label for="b-email">Email</label>
+              <input id="b-email" name="email" type="email" autocomplete="email" required aria-describedby="b-email-error">
+              <p class="field-error" id="b-email-error"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="b-workshop">Workshop</label>
+                <select id="b-workshop" name="workshop" required aria-describedby="b-workshop-error">
+                  <option value="">Choose one…</option>
+                  <option value="sourdough">Sourdough from scratch · Sat</option>
+                  <option value="miso">Koji &amp; miso basics · Sun</option>
+                  <option value="pastry">Laminated pastry night · Thu</option>
+                  <option value="kids">Kids’ bread club · Sat</option>
+                </select>
+                <p class="field-error" id="b-workshop-error"></p>
+              </div>
+              <div class="field field-seats">
+                <label for="b-seats">Seats</label>
+                <input id="b-seats" name="seats" type="number" inputmode="numeric" min="1" max="4" value="1" required aria-describedby="b-seats-error">
+                <p class="field-error" id="b-seats-error"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="b-notes">Allergies or notes <span class="optional">(optional)</span></label>
+              <textarea id="b-notes" name="notes" rows="3"></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Hold my seat</button>
+            <p class="demo-note">Concept site: this form doesn’t send anything.</p>
+
+            <div class="booking-success" role="status" aria-live="polite" data-success></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section voices" aria-labelledby="voices-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Overheard at the counter</p>
+          <h2 id="voices-title">Kind words</h2>
+        </header>
+        <ul class="quote-grid">
+          <li class="quote-card" data-reveal>
+            <blockquote><p>“The miso-caramel bun ruined every other pastry for me. I’m not even angry about it.”</p></blockquote>
+            <p class="quote-who">Priya · regular since 2021</p>
+          </li>
+          <li class="quote-card" data-reveal style="--delay: 100ms">
+            <blockquote><p>“I took the sourdough class with zero skills. My loaf came out better than the one I’d been buying for years.”</p></blockquote>
+            <p class="quote-who">Tom · workshop alumnus</p>
+          </li>
+          <li class="quote-card" data-reveal style="--delay: 200ms">
+            <blockquote><p>“Gloria the starter has a better social life than I do. Lovely staff and the best rye on the coast.”</p></blockquote>
+            <p class="quote-who">Maren · lives upstairs</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Visit -->
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-info" data-reveal>
+          <p class="eyebrow">Find us</p>
+          <h2 id="visit-title">Come by the harbour</h2>
+          <p class="visit-status" data-status-long aria-live="polite">Checking today’s hours…</p>
+
+          <address class="visit-address">
+            14 Harbour Street<br>
+            Port Elling, on the corner of Rope Walk
+          </address>
+          <p class="visit-directions">
+            Two minutes from the ferry terminal. Step-free entrance, bike racks
+            out front, and dogs are welcome on the terrace.
+          </p>
+
+          <table class="hours" data-hours>
+            <caption class="sr-only">Opening hours</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Monday</th><td>Closed (we’re feeding Gloria)</td></tr>
+              <tr data-day="2" data-open="07:30" data-close="15:00"><th scope="row">Tuesday</th><td>7:30 to 15:00</td></tr>
+              <tr data-day="3" data-open="07:30" data-close="15:00"><th scope="row">Wednesday</th><td>7:30 to 15:00</td></tr>
+              <tr data-day="4" data-open="07:30" data-close="15:00"><th scope="row">Thursday</th><td>7:30 to 15:00</td></tr>
+              <tr data-day="5" data-open="07:30" data-close="15:00"><th scope="row">Friday</th><td>7:30 to 15:00</td></tr>
+              <tr data-day="6" data-open="08:00" data-close="16:00"><th scope="row">Saturday</th><td>8:00 to 16:00</td></tr>
+              <tr data-day="0" data-open="08:00" data-close="13:00"><th scope="row">Sunday</th><td>8:00 to 13:00</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure class="map" data-reveal style="--delay: 120ms">
+          <svg viewBox="0 0 560 440" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Map of Harbour Street</title>
+            <desc id="map-desc">Kōji &amp; Crumb sits on the corner of Harbour Street and Rope Walk, a short walk north of the ferry terminal.</desc>
+            <rect width="560" height="440" fill="#ece2d1"/>
+            <!-- water -->
+            <path d="M0 300c60-14 110 10 170 0s100-40 170-34 140 30 220 14v160H0Z" fill="#b9cfc6"/>
+            <g fill="none" stroke="#f4ede1" stroke-width="3" stroke-linecap="round" opacity=".8">
+              <path d="M40 360c12-6 24-6 36 0s24 6 36 0"/>
+              <path d="M250 392c12-6 24-6 36 0s24 6 36 0"/>
+              <path d="M430 350c12-6 24-6 36 0s24 6 36 0"/>
+            </g>
+            <!-- pier and ferry -->
+            <path d="M330 276h28v96h-28z" fill="#d8c3a1" stroke="#2b1d14" stroke-width="2"/>
+            <path d="M372 344h64l-10 18h-46z" fill="#f4ede1" stroke="#2b1d14" stroke-width="2"/>
+            <rect x="388" y="330" width="26" height="14" fill="#f4ede1" stroke="#2b1d14" stroke-width="2"/>
+            <!-- streets -->
+            <g fill="none" stroke="#faf6ee" stroke-linecap="round">
+              <path d="M-10 238c120-10 250 2 580-6" stroke-width="26"/>
+              <path d="M210 -10c-6 90 8 170 2 250" stroke-width="20"/>
+              <path d="M420 -10c10 80 4 150-2 236" stroke-width="16"/>
+              <path d="M30 120h190" stroke-width="12"/>
+            </g>
+            <!-- blocks -->
+            <g fill="#ddcdb2">
+              <rect x="40" y="40" width="140" height="62" rx="6"/>
+              <rect x="40" y="140" width="140" height="70" rx="6"/>
+              <rect x="246" y="40" width="148" height="160" rx="6"/>
+              <rect x="446" y="40" width="96" height="164" rx="6"/>
+            </g>
+            <!-- market square -->
+            <circle cx="320" cy="120" r="34" fill="#c9d3a4"/>
+            <!-- labels -->
+            <g class="map-label">
+              <text x="40" y="262">HARBOUR STREET</text>
+              <text x="226" y="30" transform="rotate(90 226 30)">ROPE WALK</text>
+              <text x="282" y="124">MARKET SQ.</text>
+              <text x="304" y="420">FERRY TERMINAL</text>
+            </g>
+            <!-- pin -->
+            <g class="map-pin" transform="translate(226 214)">
+              <circle class="pin-pulse" r="18" fill="#d9541e" opacity=".35"/>
+              <path d="M0-44c-14 0-24 10-24 23 0 17 24 37 24 37s24-20 24-37c0-13-10-23-24-23Z" fill="#c24a17" stroke="#2b1d14" stroke-width="2.5"/>
+              <circle cy="-21" r="8" fill="#f4ede1"/>
+            </g>
+          </svg>
+          <figcaption>Look for the persimmon awning.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Kōji <em>&amp;</em> Crumb</p>
+        <p>14 Harbour Street, Port Elling<br><a href="mailto:hello@kojiandcrumb.example">hello@kojiandcrumb.example</a></p>
+      </div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#menu">Today’s bake</a></li>
+          <li><a href="#process">The slow way</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#visit">Visit</a></li>
+        </ul>
+      </nav>
+      <p class="footer-credit">
+        Kōji &amp; Crumb is a fictional bakery. Concept site designed and built by
+        <a href="https://github.com/minty-web">minty-web</a>, © <span data-year>2026</span>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
